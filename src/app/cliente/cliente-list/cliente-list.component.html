@@ -1,0 +1,14 @@
+<h1>{{ title }}</h1>
+<button>{{ title }}</button>
+<br>
+<input type="text" value="{{ title }}">
+<img src="{{ urlimage }}" alt="Smiley face" height="100" width="100">
+
+<hr>
+<h1 [innerHtml]="title"></h1>
+<input type="text" [value]="title">
+<img [src]="urlimage" alt="Smiley face" height="100" width="100">
+<button [innerHtml]="title"></button>
+
+<hr>
+<button (click)="login('luisEduardo')" (mouseenter)="login('gunnar')">Login</button>
