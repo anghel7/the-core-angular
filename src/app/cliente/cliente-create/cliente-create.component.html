@@ -1,0 +1,11 @@
+<h3 [innerHTML]="cliente.apellido_paterno"></h3>
+
+<label > Apellido Paterno</label>
+<input [(ngModel)]="cliente.apellido_paterno" name="apellido_paterno">
+
+<label > Apellido Materno</label>
+<input [(ngModel)]="cliente.apellido_materno" >
+
+
+
+<button (click)="crearCliente()">Crear</button>

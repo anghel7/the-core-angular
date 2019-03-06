@@ -16,7 +16,8 @@ export class ClienteListComponent implements OnInit {
   }
 
   login(imagen: string): void {
-    console.log('Iniciando sesion: ', imagen)
+    //console.log('Iniciando sesion: ', imagen);
+    this.title = 'Cambiando el valor de titulo';
   }
 
 }
