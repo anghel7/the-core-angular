@@ -8,16 +8,36 @@ import { Component, OnInit } from '@angular/core';
 export class ClienteListComponent implements OnInit {
 
   title: string = "Bienvenido al modulo de clientes";
-  urlimage: string = "https://img.timesnownews.com/story/1550976042-Thanos_new.jpg?d=600x450"
+
+  clienteList: any[] = [
+    {
+      id_cliente: 1,
+      nombre: "Juan",
+      apellido_paterno: "Perez",
+      apellido_materno: "Lopez",
+      image_url: "http://cursoangular.hosting.cs.umss.edu.bo/images/cliente/juan.jpg"
+    },
+    {
+      id_cliente: 2,
+      nombre: "Ester Mariso",
+      apellido_paterno: "Gomez",
+      apellido_materno: "Aramayo",
+      image_url: "http://cursoangular.hosting.cs.umss.edu.bo/images/cliente/ester.jpg"
+    },
+    {
+      id_cliente: 3,
+      nombre: "Emilia",
+      apellido_paterno: "Noguera",
+      apellido_materno: "Rios",
+      image_url: "http://cursoangular.hosting.cs.umss.edu.bo/images/cliente/emilia.jpg"
+    }
+  ];
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  login(imagen: string): void {
-    //console.log('Iniciando sesion: ', imagen);
-    this.title = 'Cambiando el valor de titulo';
-  }
+
 
 }

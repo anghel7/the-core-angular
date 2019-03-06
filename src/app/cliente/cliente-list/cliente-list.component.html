@@ -1,17 +1,10 @@
-<!--string interpolation-->
 <h1>{{ title }}</h1>
-<button>{{ title }}</button>
-<br>
-<input type="text" value="{{ title }}">
-<img src="{{ urlimage }}" alt="Smiley face" height="100" width="100">
 
-<!--Property binding-->
-
-<hr>
-<h1 [innerHtml]="title"></h1>
-<input type="text" [value]="title">
-<img [src]="urlimage" alt="Smiley face" height="100" width="100">
-<button [innerHtml]="title"></button>
-<!--event binding -->
-<hr>
-<button (click)="login('luisEduardo')">Login</button>
+<div *ngFor="let cliente of clienteList">
+  <div *ngIf="cliente.id_cliente > 1">
+    <b>Nombre: {{cliente.nombre}}</b><br>
+    <b>Nombre: {{cliente.apellido_paterno}}</b><br>
+    <b>Nombre: {{cliente.apellido_materno}}</b>
+    <hr>
+  </div>
+</div>
