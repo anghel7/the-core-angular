@@ -1,10 +1,5 @@
 <h1>{{ title }}</h1>
 
 <div *ngFor="let cliente of clienteList">
-  <div *ngIf="cliente.id_cliente > 1">
-    <b>Nombre: {{cliente.nombre}}</b><br>
-    <b>Nombre: {{cliente.apellido_paterno}}</b><br>
-    <b>Nombre: {{cliente.apellido_materno}}</b>
-    <hr>
-  </div>
+  <sky-cliente-item [usuario]="cliente" ></sky-cliente-item>
 </div>
