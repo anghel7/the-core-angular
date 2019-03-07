@@ -38,6 +38,10 @@ export class ClienteListComponent implements OnInit {
   ngOnInit() {
   }
 
+  ver(e): void {
+    console.log('Reciviendo inforamcion del hijo: ', e);
+
+  }
 
 
 }

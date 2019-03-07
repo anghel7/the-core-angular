@@ -1,5 +1,5 @@
 <h1>{{ title }}</h1>
 
 <div *ngFor="let cliente of clienteList">
-  <sky-cliente-item [usuario]="cliente" ></sky-cliente-item>
+  <sky-cliente-item [usuario]="cliente" (verInfo)="ver($event)"></sky-cliente-item>
 </div>

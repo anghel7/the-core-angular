@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter } from '@angular/core';
+import { Output } from '@angular/core';
 
 @Component({
   selector: 'sky-cliente-item',
@@ -8,15 +9,20 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ClienteItemComponent implements OnInit {
 
   @Input() usuario: any;
+  @Output() verInfo: EventEmitter<any> = new EventEmitter<any>();
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  verContenido():void{
-    console.log('Usuario: ', this.usuario);
-    
+  verInformacion(): void {
+    console.log('tratando de enviar informacion')
+    this.verInfo.emit(['unod','dos'])
+  }
+
+  editarInformacion(): void {
+    console.log('Editar informacion: ', this.usuario)
   }
 
 }
